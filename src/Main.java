@@ -2,16 +2,24 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        int account = 100;
+        int bonus = 100;
+        int refill = 1100;
+        int cashback;
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        if (refill >= 1000){
+            cashback = refill / bonus;
+        } else {
+            cashback = 0;
         }
+
+        int total = account + refill + cashback;
+
+        System.out.printf("Количество бонусов" + cashback);
+
+        System.out.println("На счету" + total);
+
+        System.out.println("Пополнение на" + refill);
     }
 }
