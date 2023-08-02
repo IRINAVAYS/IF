@@ -16,10 +16,10 @@ public class Main {
 
         int total = account + refill + cashback;
 
-        System.out.printf("Количество бонусов" + cashback);
+        System.out.printf("Количество бонусов: " + cashback);
 
-        System.out.println("На счету" + total);
+        System.out.println("На счету: " + total);
 
-        System.out.println("Пополнение на" + refill);
+        System.out.println("Пополнение на " + refill);
     }
 }
